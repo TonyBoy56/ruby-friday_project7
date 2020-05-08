@@ -25,6 +25,6 @@ describe ("#ana_and_anti") do
 
   it('the program will check that different cases do not effect anagram check') do
     theirWords = Word.new('Tea', 'Eat')
-    expect(theirWords.anagram()).to(eq(false))
+    expect(theirWords.anagram()).to(eq("These words are an anagram"))
   end
 end
