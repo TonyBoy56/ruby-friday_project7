@@ -2,6 +2,7 @@
 ## _By: Antonio Cruz_
 ## Description
 
+_This is an application that will determine whether two provided words are anagrams or antigrams._
 
 ## Setup
 
@@ -34,9 +35,13 @@ _No known bugs at this time_
 
 ## Specs
 
-|Behavior|Input|Output|
-| :----|:-----|:-----|
+* Behavior: The program will check if two words are anagrams.
+  * Input: "eat"
+  * Output: "tea"
 
+* Behavior: The program will check if two words are anitgrams.
+  * Input: "hello"
+  * Output: "sir"
 
 ## Legal
 
