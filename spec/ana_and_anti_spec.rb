@@ -15,7 +15,7 @@ describe ("#ana_and_anti") do
 
   it('the program will return a confirmation if the words are ANTIGRAMS') do
     theirWords = Word.new('sup', 'hello')
-    expect(theirWords.anagram()).to(eq(false))
+    expect(theirWords.anagram()).to(eq("This is an antigram"))
   end
 
 end
