@@ -8,8 +8,14 @@ describe ("#ana_and_anti") do
     expect(theirWords.vowel_checker()).to(eq(true))
   end
   
-  it('the program will return true if the words are anagrams') do
+  it('the program will return a confirmation if the words are anagrams') do
     theirWords = Word.new('tea', 'eat')
     expect(theirWords.anagram()).to(eq("These words are an anagram"))
   end
+
+  it('the program will return a confirmation if the words are ANTIGRAMS') do
+    theirWords = Word.new('sup', 'hello')
+    expect(theirWords.anagram()).to(eq(false))
+  end
+
 end

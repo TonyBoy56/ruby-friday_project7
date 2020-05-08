@@ -20,6 +20,7 @@ class Word
 
   def anagram()
     if vowel_checker()
+      puts "Got to line 23"
       if (@firstWord.any? {|letter| @secondWord.include?(letter)} == false)
         "This is an antigram"
       elsif (@firstWord.length == @secondWord.length)
