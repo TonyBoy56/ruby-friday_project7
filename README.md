@@ -36,16 +36,20 @@ _No known bugs at this time_
 ## Specs
 
 * Behavior: The program checks that the two word inputs both contain vowels
-  * Input: "tea"
-  * Ouput: "eat"
+  * Input: "tea", "eat"
+  * Ouput: true
 
 * Behavior: The program will check if two words are anagrams.
-  * Input: "tea"
-  * Output: "eat"
+  * Input: "tea", "eat"
+  * Output: "These words are an anagram"
 
 * Behavior: The program will check if two words are anitgrams.
-  * Input: "sup"
-  * Output: "hello"
+  * Input: "sup", "hello"
+  * Output: "This is an antigram"
+
+* Behavior: The program will check if two inputs are actually words.
+  * Input: 'spd', 'tnl'
+  * Output: "Please input an actual word!"
 
 ## Legal
 
