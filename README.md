@@ -9,7 +9,7 @@ _This is an application that will determine whether two provided words are anagr
 
 1. If you would like to view this project locally... :
 
-2. Visit this link https://github.com/assassin56/ruby-friday_project6
+2. Visit this link https://github.com/assassin56/ruby-friday_project7
  
 3. Clone this repo by selecting the "clone or download" button. This will allow you to copy the repo's link.
 
