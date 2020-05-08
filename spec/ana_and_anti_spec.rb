@@ -20,6 +20,6 @@ describe ("#ana_and_anti") do
 
   it('the program will produce an error statement if there are no actual word inputs') do
     theirWords = Word.new('spd', 'tnl')
-    expect(theirWords.anagram()).to(eq(false))
+    expect(theirWords.anagram()).to(eq(true))
   end
 end
