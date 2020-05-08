@@ -22,4 +22,9 @@ describe ("#ana_and_anti") do
     theirWords = Word.new('spd', 'tnl')
     expect(theirWords.anagram()).to(eq("Please input an actual word!"))
   end
+
+  it('the program will check that different cases do not effect anagram check') do
+    theirWords = Word.new('Tea', 'Eat')
+    expect(theirWords.anagram()).to(eq(false))
+  end
 end
