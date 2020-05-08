@@ -55,6 +55,8 @@ _No known bugs at this time_
   * Input: 'Tea', 'Eat'
   * Output: "These words are an anagram"
 
+* Behavior: The program will eliminate spaces and punctuation should the user input more than one word per input.
+
 ## Legal
 
 #### MIT License
