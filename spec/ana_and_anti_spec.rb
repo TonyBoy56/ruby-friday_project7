@@ -27,4 +27,7 @@ describe ("#ana_and_anti") do
     theirWords = Word.new('Tea', 'Eat')
     expect(theirWords.anagram()).to(eq("These words are an anagram"))
   end
+  
+  it('the program will eliminate spaces and punctuation should the user input more than one word per input, accounting for multiple anagram/antigrams.') do
+    ## To Be completed by the end of the weekend ##
 end
