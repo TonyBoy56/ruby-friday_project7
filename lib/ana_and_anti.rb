@@ -1,10 +1,16 @@
 class CheckWord
+  attr_reader(:firstWord, :secondWord)
+  attr_writer(:firstWord, :secondWord)
+  attr_accessor(:firstWord, :secondWord)
+  
   def initialize(firstWord, secondWord)
     @firstWord = firstWord.downcase.gsub(/[^a-z]/, '').chars
+    puts @firstWord
     @secondWord = secondWord.downcase.gsub(/[^a-z]/, '').chars
+    puts @secondWord
   end
 
-  def vowels()
+  def vowelChecker()
     vowels = ['a', 'e', 'i', 'o', 'u']
     i = 0
     j = 0
@@ -18,7 +24,7 @@ class CheckWord
   end
 
   def anagram()
-    if vowels()
+    if vowelChecker()
       includesChecker = @firstWord.any? {|char| @secondWord.include?(char)}
       if (includesChecker == false)
         "This is an antigram"
