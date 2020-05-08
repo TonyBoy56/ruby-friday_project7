@@ -51,6 +51,10 @@ _No known bugs at this time_
   * Input: 'spd', 'tnl'
   * Output: "Please input an actual word!"
 
+* Behavior: The program will check that different cases do not effect the anagram check.
+  * Input: 'Tea', 'Eat'
+  * Output: "These words are an anagram"
+
 ## Legal
 
 #### MIT License
