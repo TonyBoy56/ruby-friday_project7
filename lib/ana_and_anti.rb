@@ -5,7 +5,7 @@ class Word
   end
 
   def vowel_checker()
-    vowels = ['a', 'e', 'i', 'o', 'u']
+    vowels = ['a', 'e', 'i', 'o', 'u', 'y']
     i = 0
     j = 0
     @firstWord.each { |letter| vowels.each { |vowel| (letter.include?(vowel) ? i += 1 : i += 0)}}
@@ -20,12 +20,13 @@ class Word
 
   def anagram()
     if vowel_checker()
-      puts "Got to line 23"
       if (@firstWord.any? {|letter| @secondWord.include?(letter)} == false)
         "This is an antigram"
       elsif (@firstWord.length == @secondWord.length)
         "These words are an anagram"
       end
+    else 
+      "Please input an actual word!"
     end  
   end
 end
