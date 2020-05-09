@@ -28,6 +28,10 @@ class Word
     # if (@firstWord.include?(" " || "," || ".") || @secondWord.include?(" " || "," || "."))
     #   "We made it into the punctuation check!"
     # end
+    wordsArr1 = @firstWord.split(/[\s,']/)
+    puts wordsArr1
+    wordsArr2 = @secondWord.split(/[\s,']/)
+    puts wordsArr2
   end
 
   def anagram()
