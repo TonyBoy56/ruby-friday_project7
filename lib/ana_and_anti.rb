@@ -26,11 +26,13 @@ class Word
 
   def anagram()
     if vowel_checker()
-      punctuation = " ", ",", "."
+      punctuation = 
+      # special = "?<>',?[]}{=-)(*&^%$#`~{}"
+      # regex = /[#{special.gsub(/./){|char| "\\#{char}"}}]/
       if (@firstWord.any? {|letter| @secondWord.include?(letter)} == false)
         "This is an antigram"
-      elsif (@firstWord.include?(punctuation) || @secondWord.include?(punctuation))
-        puts "We made it to the punctuation check!"
+      elsif (@firstWord.include?(" " || "," || ".") || @secondWord.include?(" " || "," || "."))
+        "We made it into the punctuation check!"
       elsif (@firstWord.length == @secondWord.length)
         "These words are an anagram"
       end
