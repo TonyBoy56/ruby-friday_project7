@@ -29,22 +29,31 @@ class Word
     #   "We made it into the punctuation check!"
     # end
     wordsArr1 = @firstWord.split(/[\s,']/)
+    puts wordsArr1
     wordsArr2 = @secondWord.split(/[\s,']/)
+    puts wordsArr2
     if (wordsArr1.length > wordsArr2.length)
-
-    else
-
+      wordsArr1.each { |word1|  
+        wordsArr2.each { |word2| 
+          anagram()}}
+    elsif (wordsArr2.length > wordsArr1.length)
+      wordsArr2.each { |word2| 
+        wordsArr1.each { |word1| 
+          anagram()}}
     end
-
   end
 
   def anagram()
     vowel_checker()
     if vowel_checker()
       if (@charArr1.any? {|letter| @charArr2.include?(letter)} == false)
-        "This is an antigram"
+      # Insert the actual words that are being compared against here. Find the proper syntax #  
+      "This is an antigram"
       elsif (@charArr1.length == @charArr2.length)
+        # Insert the actual words that are being compared against here. Find the proper syntax #
         "These words are an anagram"
+      elsif (@charArr1.length != @charArr2.length)
+        "error error error"
       end
     else 
       "Please input an actual word!"

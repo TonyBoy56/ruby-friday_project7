@@ -29,8 +29,8 @@ describe ("#ana_and_anti") do
   # end
 
   it('the program will check multiple words that the user may have entered in both inputs') do
-    theirWords = Word.new('tea, stop', 'eat, pots')
-    expect(theirWords.multiple_words()).to(eq())
+    theirWords = Word.new('tea, stop, bread', 'eat, pots')
+    expect(theirWords.multiple_words()).to(eq(false))
   end
   
   # it('the program will eliminate spaces and punctuation should the user input more than one word per input, accounting for multiple anagram/antigrams.') do
