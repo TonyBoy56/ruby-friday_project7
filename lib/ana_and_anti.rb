@@ -24,20 +24,23 @@ class Word
     end
   end
 
-  def multipleWords()
+  def multiple_words()
     # if (@firstWord.include?(" " || "," || ".") || @secondWord.include?(" " || "," || "."))
     #   "We made it into the punctuation check!"
     # end
     wordsArr1 = @firstWord.split(/[\s,']/)
-    puts wordsArr1
     wordsArr2 = @secondWord.split(/[\s,']/)
-    puts wordsArr2
+    if (wordsArr1.length > wordsArr2.length)
+
+    else
+
+    end
+
   end
 
   def anagram()
     vowel_checker()
     if vowel_checker()
-      punctuation = [" ", ",", "."]
       if (@charArr1.any? {|letter| @charArr2.include?(letter)} == false)
         "This is an antigram"
       elsif (@charArr1.length == @charArr2.length)
