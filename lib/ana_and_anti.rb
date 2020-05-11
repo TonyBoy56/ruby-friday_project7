@@ -47,7 +47,6 @@ class Word
   end
 
   def anagram()
-    vowel_checker()
     if vowel_checker()
       if (@charArr1.any? {|letter| @charArr2.include?(letter)} == false)
         "This is an antigram"
