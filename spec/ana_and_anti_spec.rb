@@ -33,8 +33,8 @@ describe ("#ana_and_anti") do
     expect(theirWords.multiple_words()).to(eq(false))
   end
   
-  # it('the program will eliminate spaces and punctuation should the user input more than one word per input, accounting for multiple anagram/antigrams.') do
-  #   theirWords = Word.new('tea, stop', 'eat, pots')
-  #   expect(theirWords.anagram()).to(eq(false))
-  # end
+  it('the program will eliminate spaces and punctuation should the user input more than one word per input, accounting for multiple anagram/antigrams.') do
+    theirWords = Word.new('tea, stop', 'eat, pots')
+    expect(theirWords.anagram()).to(eq(false))
+  end
 end
