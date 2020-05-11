@@ -55,9 +55,13 @@ _No known bugs at this time_
   * Input: 'Tea', 'Eat'
   * Output: "These words are an anagram"
 
-* Behavior: The program will eliminate spaces and punctuation should the user input more than one word per input.
-  * Input: 'tea, stop', 'eat', pots'
-  * Output: 
+* Behavior: The program will check multiple words that the user may have entered in both inputs for difference in length, and compare arrays accordingly.
+  * Input: 'tea, stop, bread', 'eat', pots'
+  * Output: ["tea", "", "stop", "", "bread"] (the longest array)
+
+* Behavior: The program will eliminate spaces and punctuation should the user input more than one word per input, accounting for multiple anagram/antigrams.
+  * Input: "tea, stop", "eat, pots"
+  * Output: "These words are an anagram"
 ## Legal
 
 #### MIT License
