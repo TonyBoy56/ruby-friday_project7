@@ -25,7 +25,6 @@ class Word
   end
 
   def multiple_words()
-    # (/\W+/) would also suffice
     wordsArr1 = @firstWord.split(/\W+/)
     wordsArr2 = @secondWord.split(/\W+/)
     if (wordsArr1.length > wordsArr2.length)
