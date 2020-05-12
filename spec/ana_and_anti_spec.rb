@@ -30,7 +30,7 @@ describe ("#ana_and_anti") do
 
   it('the program will check multiple words that the user may have entered in both inputs for difference in length, and compare arrays accordingly') do
     theirWords = Word.new('tea, stop, bread', 'eat, pots')
-    expect(theirWords.multiple_words()).to(eq(["tea", "", "stop", "", "bread"]))
+    expect(theirWords.multiple_words()).to(eq(["tea", "stop", "bread"]))
   end
   
   it('the program will eliminate spaces and punctuation should the user input more than one word per input, accounting for multiple anagram/antigrams.') do

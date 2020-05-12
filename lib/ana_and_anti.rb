@@ -25,8 +25,9 @@ class Word
   end
 
   def multiple_words()
-    wordsArr1 = @firstWord.split(/[\s,']/)
-    wordsArr2 = @secondWord.split(/[\s,']/)
+    # (/\W+/) would also suffice
+    wordsArr1 = @firstWord.split(/\W+/)
+    wordsArr2 = @secondWord.split(/\W+/)
     if (wordsArr1.length > wordsArr2.length)
       wordsArr1.each { |word1|  
         ch1 = word1.chars
@@ -50,8 +51,10 @@ class Word
     if vowel_checker()
       if (@charArr1.any? {|letter| @charArr2.include?(letter)} == false)
         "This is an antigram"
-      elsif (@charArr1.length == @charArr2.length)
+      elsif (@charArr1.sort == @charArr2.sort)
         "These words are an anagram"
+      else
+        "These are not anagrams"
       end
     else 
       "Please input an actual word!"
